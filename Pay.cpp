@@ -29,7 +29,7 @@ void Pay::Read()
 	} while (!Init(salary, days_worked));
 }
 
-void Pay::Display() const
+void Pay::Display()
 {
 	cout << endl;
 	cout << " Salary = " << first << endl;
