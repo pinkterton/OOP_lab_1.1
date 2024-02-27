@@ -26,7 +26,7 @@ int main()
 	cout << " Days worked = "; cin >> second;
 	a = makePay(first, second);
 	a.Display();
-	cout << "Summa = " << a.summa() << endl << endl;
+	cout << " Summa = " << a.summa() << endl << endl;
 
 	return 0;
 }

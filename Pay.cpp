@@ -3,6 +3,16 @@
 
 using namespace std;
 
+void Pay::SetFirst(double salary)
+{
+	first = salary;
+}
+
+void Pay::SetSecond(unsigned short days_worked)
+{
+	second = days_worked;
+}
+
 bool Pay::Init(double salary, unsigned short days_worked)
 {
 	if (salary >= 0 && days_worked < 21)
@@ -29,7 +39,7 @@ void Pay::Read()
 	} while (!Init(salary, days_worked));
 }
 
-void Pay::Display()
+void Pay::Display() const
 {
 	cout << endl;
 	cout << " Salary = " << first << endl;
